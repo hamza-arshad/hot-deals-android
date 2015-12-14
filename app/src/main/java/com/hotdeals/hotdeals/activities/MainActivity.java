@@ -2,6 +2,7 @@ package com.hotdeals.hotdeals.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
     }
-
     private void setupTabIcons() {
 
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.tab_layout, null);
@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.tab_layout, null);
-        tabTwo.setText("Nabeel");
+        //tabTwo.setText("Nabeel");
         tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_launcher, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 
         TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.tab_layout, null);
-        tabThree.setText("Hamza");
+        //tabThree.setText("Hamza");
         tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_launcher, 0, 0);
         tabLayout.getTabAt(2).setCustomView(tabThree);
     }
@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
