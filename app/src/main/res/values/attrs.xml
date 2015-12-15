@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HotDeals">
+        <attr name="X" format="float" />
+        <attr name="Y" format="float" />
+        <attr name="width" format="float" />
+        <attr name="horizontal" format="float" />
+    </declare-styleable>
+</resources>

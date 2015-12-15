@@ -15,6 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by confiz-2349 on 08/11/15.
  */
+
 public class DealsActivity extends Fragment {
     ListView lv;
 

@@ -15,7 +15,7 @@ import com.hotdeals.hotdeals.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long SLEEP_TIME = 5;
+    private static final long SLEEP_TIME = 1; //5;
     private static final String TAG = SplashActivity.class.getName();
 
     @Override
@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
                 Log.e(TAG, e.toString());
             }
 
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+            Intent intent = new Intent(SplashActivity.this, DealDetailActivity.class);
             SplashActivity.this.startActivity(intent);
             SplashActivity.this.finish();
 
